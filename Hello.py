@@ -23,3 +23,5 @@ last_name_capital = last_name.capitalize()
 email2 = f'{first_name}.{last_name}@clarusway.com'.lower()
 print(email2)
 
+
+
