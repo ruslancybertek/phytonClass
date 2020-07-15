@@ -24,8 +24,9 @@
 # milliseconds = 555 --> just 555 millisecond/s
 
 
-#  millis=int(input("Enter time in milliseconds "))
-millis=999
+millis=input("Enter time in milliseconds ")
+millis=int(millis)
+# millis=62000
 seconds=(millis/1000)%60
 seconds = int(seconds)
 minutes=(millis/(1000*60))%60
@@ -36,8 +37,8 @@ hours = int (hours)
 # print ("%d hour %s minutes/s %s second/s %d millisecond/s" % (hours, minutes,seconds, millis))
 # print ("%d hour %s minutes/s %s second/s" % (hours, minutes,seconds, millis))
 
-print(("%d hour/s" % (hours)) * (hours > 0) + " %d minutes/s" % (minutes) * (minutes > 0) + " %d seconds/s" % (seconds)*(seconds>0) or "just %d millisecond/s" % millis )
+# print(("%d hour/s" % (hours)) * (hours > 0) + " %d minutes/s" % (minutes) * (minutes > 0) + " %d seconds/s" % (seconds)*(seconds>0) or "just %d millisecond/s" % millis )
 
-print(f'{hours} hour/s'*(hours != 0) + f' {minutes} minute/s'*(minutes != 0) + f' {seconds} second/s'*(seconds != 0) or f'just {milliseconds} millisecond/s')
+print(f'{hours} hour/s'*(hours != 0) + f' {minutes} minute/s'*(minutes != 0) + f' {seconds} second/s'*(seconds != 0) or f'just {millis} millisecond/s')
 
 # print(f'{hours} hour/s' * (hours != 0))

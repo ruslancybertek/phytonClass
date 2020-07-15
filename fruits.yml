@@ -1,0 +1,44 @@
+#An employee record
+martin:
+   name: Martin Snow
+   job: Developer
+   skill: Senior
+   age: 35
+
+
+# Employee list
+- martin:
+    name: Martin Snow
+    job: Developer
+    skill:
+      - python
+      - java
+      - javascript
+    age: 35
+- john:
+    name: John Snow
+    job: Developer
+    skill:
+      - java
+      - html
+      - css
+    age: 45
+
+# Another object format
+martin: {name: Martin Snow, job: Developer, skill: ['python', 'java']}     
+
+# Multiple lines values
+
+name: Martin Snow
+job: Developer
+skill:
+   - java
+   - html
+   - typrscript
+education: |
+    BSc Computer Science
+    MSc Business Administration
+eduvcation: >
+    BSc Computer Science
+    MSc Business Administration
+        
